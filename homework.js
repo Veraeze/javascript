@@ -25,4 +25,4 @@ let myArr = [];
     const square = myArr.map((number) => number * number)
     console.log(square)
 
-
+  
