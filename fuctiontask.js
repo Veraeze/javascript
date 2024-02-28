@@ -1,7 +1,6 @@
 let length = 3;
 let width = 3;
 
-
 let obj = [
     {row: 0, col: 0, value:"X"},
     {row: 0, col: 1, value:"X"},
@@ -15,20 +14,17 @@ let obj = [
 
 ]
 
-
-
-
-let first = [[],];
-let second = [[],];
-let third = [[]];
-let answer = first.concat(second, third);
-console.log(answer)
-let check = 0;
+let result = [[], [], []];
 
 for (let key = 0; key < 3; key++){
-        first[key].push(obj[newkey]['value']);
-}     
+        result[0].push(obj[key]['value']);
+}
+for (let key = 3; key < 6; key++){
+    result[1].push(obj[key]['value']);
+}  
+for (let key = 6; key < 9; key++){
+    result[2].push(obj[key]['value']);
+}       
 
-
-console.log(answer)
+console.log(result)
 
